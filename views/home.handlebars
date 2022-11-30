@@ -1,0 +1,18 @@
+<h1>Coin Data</h1>
+<p>As at {{ time }}</p>
+<p>Price against {{ data.asset_id_base }}
+<p>By Anesu Kafesu</p>
+<table>
+	<thead>
+		<th>Token</th>
+		<th>Price</th>
+	</thead>
+	<tbody>
+		{{#each data.rates}}
+			<tr>
+				<td>{{ asset_id_quote }}</td>
+				<td>{{ rate  }}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
