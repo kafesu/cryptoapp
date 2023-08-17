@@ -9,7 +9,7 @@ while True:
     if word == "-1":
         break
 
-    URL = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+    URL = "https://api.dictionaryapi.dev/api/v2/entries/en/{}".format(word)
 
     response = get(URL, timeout=10000)
 
